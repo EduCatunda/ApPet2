@@ -1,6 +1,6 @@
-import type { Config } from "prismic-ts-codegen";
+// import type { Config } from "prismic-ts-codegen";
 
-const config: Config = {
+const config = {
   output: "./types.generated.ts",
   models: ["./customtypes/**/index.json", "./slices/**/model.json"],
 };
