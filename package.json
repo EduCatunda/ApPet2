@@ -6,17 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.3.4",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@hookform/resolvers": "^2.9.8",
+    "@prismicio/client": "^6.7.1",
+    "@prismicio/helpers": "^2.3.5",
+    "@prismicio/next": "^0.1.6",
+    "@prismicio/react": "^2.5.0",
+    "@prismicio/slice-simulator-react": "^0.2.2",
+    "@types/prismic-dom": "^2.1.1",
     "axios": "^0.27.2",
+    "date-fns": "^2.29.3",
     "framer-motion": "^7.5.1",
     "next": "12.3.1",
     "next-auth": "^4.12.2",
+    "prismic-dom": "^2.2.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.36.1",
@@ -30,6 +39,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
+    "slice-machine-ui": "^0.5.0",
     "typescript": "4.8.4"
   }
 }

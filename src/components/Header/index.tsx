@@ -1,10 +1,11 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, HStack, Link } from '@chakra-ui/react'
 import { Logo } from './Logo'
 import { UserInfo } from './UserInfo'
 import { useSession } from 'next-auth/react'
+import { ActiveLink } from './ActiveLink'
 
 export function Header() {
-    const { data } = useSession() 
+    const { data } = useSession()
     return (
         <Flex
             as="header"
@@ -22,7 +23,19 @@ export function Header() {
                 w="100%"
             >
 
-                <Logo />
+                <HStack>
+                    <Logo />
+                    <ActiveLink href='/' >
+                        <Link >
+                            Home
+                        </Link>
+                    </ActiveLink>
+                    <ActiveLink href='/blog' >
+                        <Link>
+                            Blog
+                        </Link>
+                    </ActiveLink>
+                </HStack>
                 <UserInfo />
 
             </Flex>
