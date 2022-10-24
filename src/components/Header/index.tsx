@@ -11,9 +11,9 @@ export function Header() {
             as="header"
             w="100%"
             h="20"
-            mt="4"
             px="6"
             borderBottom={'2px'}
+            bg="linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%)"
         >
             <Flex
                 align="center"
@@ -33,6 +33,11 @@ export function Header() {
                     <ActiveLink href='/blog' >
                         <Link>
                             Blog
+                        </Link>
+                    </ActiveLink>
+                    <ActiveLink href='/petshops' >
+                        <Link>
+                            Petshops
                         </Link>
                     </ActiveLink>
                 </HStack>
